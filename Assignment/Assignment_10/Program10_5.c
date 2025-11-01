@@ -1,1 +1,53 @@
+////////////////////////////////////////////////////////////////////////////
+//
+//  Request Header File 
+//
+////////////////////////////////////////////////////////////////////////////
 
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :    SquareMeter
+//  Description   :    Given Square feet number from user and disaplay    
+//                     converted Square feet to Square Meter.
+//  Input         :    Float
+//  Output        :    Double
+//  Author        :    Satyajeet Manohar Ghule
+//  Date          :    27/10/2025
+//
+////////////////////////////////////////////////////////////////////////////
+
+double SquareMeter(int iNo)
+{
+    float SqMeter = 0.0f;
+
+    SqMeter = iNo * 0.0929;
+    return SqMeter;
+}
+////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point Function for the Application
+//
+////////////////////////////////////////////////////////////////////////////
+int main()
+{
+    int iValue = 0;
+    double dRet = 0.0f;
+
+    printf("Enter Square feet number :\n");
+    scanf("%d",&iValue);
+
+    dRet = SquareMeter(iValue);
+    printf("%d Square feet Equal to  : %f Square Meter",iValue,dRet);
+    return 0;
+}
+////////////////////////////////////////////////////////////////////////////
+//
+//  Test Cases Successfully Handeld by This Application
+//
+//  Input   :    5   Output  :  0.464500
+//  Input   :    7   Output  :  0.650300
+//  Input   :   12   Output  :  1.114800
+//
+////////////////////////////////////////////////////////////////////////////
