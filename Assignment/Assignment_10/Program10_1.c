@@ -1,0 +1,55 @@
+////////////////////////////////////////////////////////////////////////////
+//
+//  Request Header File 
+//
+////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :    CircleArea
+//  Description   :    Given Radius Number from user and print Total    
+//                     Calculation of Area.
+//  Input         :    Float
+//  Output        :    Double
+//  Author        :    Satyajeet Manohar Ghule
+//  Date          :    26/10/2025
+//
+////////////////////////////////////////////////////////////////////////////
+double CircleArea(float iNo)
+{
+    float PI = 0.0;
+    PI = 3.14;
+
+    double area = PI * iNo * iNo;
+
+    return area;
+}
+////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point Function for the Application
+//
+////////////////////////////////////////////////////////////////////////////
+int main()
+{
+    float fValue = 0.0;
+    double dRet = 0.0;
+
+    printf("Enter Radius Number :\n");
+    scanf("%f",&fValue);
+
+    dRet = CircleArea(fValue);
+    printf("Circle of Area is : %.4f",dRet);
+    
+    return 0;
+}
+////////////////////////////////////////////////////////////////////////////
+//
+//  Test Cases Successfully Handeld by This Application
+//
+//  Input   :    7      Output  :   153.8600
+//  Input   :    5.3    Output  :   88.6224
+//  Input   :    10.4   Output  :   339.6224
+//
+////////////////////////////////////////////////////////////////////////////
