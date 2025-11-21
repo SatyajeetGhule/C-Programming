@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////
+//
+//  Request Header File
+//
+////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :    Pattern
+//  Description   :    Accept Number from user and disaplay number up to N
+//                     number and print each number in between * and #.
+//  Input         :    Integer
+//  Output        :    Integer
+//  Author        :    Satyajeet Manohar Ghule
+//  Date          :    21/11/2025
+//
+////////////////////////////////////////////////////////////////////////////
+
+void Pattern(int iNo)
+{
+    for(int iCnt = 1; iCnt <= iNo; iCnt++)
+    {
+        printf("#\t%d\t*\t",iCnt);
+    }
+    printf("\n");
+}
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point Function for the Application
+//
+////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter a Number of Frequency :\n");
+    scanf("%d",&iValue);
+
+    Pattern(iValue);
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Test Cases Successfully Handeld by This Application
+//
+//  Input   :  5    Output  :   # 1 * # 2 * # 3 * #  4 * # 5 *
+//  Input   :  3    Output  :   # 1 * # 2 * # 3 *
+//  Input   :  8    Output  :   # 1 * # 2 * # 3 * #  4 * # 5 * # 6 * # 7 * # 8 *
+//
+////////////////////////////////////////////////////////////////////////////
