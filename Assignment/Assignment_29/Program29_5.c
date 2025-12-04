@@ -1,0 +1,62 @@
+ ////////////////////////////////////////////////////////////////////////////
+//
+//  Request Header File 
+//
+////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :    reverse
+//  Description   :    which accept string from user and display it in
+//                     reverse order.
+//  Input         :    String
+//  Output        :    void (print String)
+//  Author        :    Satyajeet Manohar Ghule
+//  Date          :    29/11/2025
+//
+////////////////////////////////////////////////////////////////////////////
+
+void Reverse(char *str)
+{
+    char *temp = str;
+    while(*str != '\0')
+    {
+        *str++;        
+    }
+    str--;
+    while(str >= temp)
+    {
+        printf("%c",*str);
+        *str--;
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point Function for the Application
+//
+////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char Arr[20];
+    bool bRet = false;
+
+    printf("Enter a String :\n");
+    scanf("%[^'\n']s",Arr);
+
+    Reverse(Arr);    
+
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Test Cases Successfully Handeld by This Application
+//
+//  Input   :   “MarvellouS”        Output  :   “SuollevraM”
+//  Input   :   "Xyz"               Output  :   "zyX"
+//
+////////////////////////////////////////////////////////////////////////////
