@@ -8,9 +8,9 @@
 
 ////////////////////////////////////////////////////////////////////////////
 //
-//  Function Name :    
-//  Description   :    
-//                     
+//  Function Name :    Display
+//  Description   :    Accept character from user and display its ASCII 
+//                     value in decimal, octal and hexadecimal format.                    
 //  Input         :    Character
 //  Output        :    Charecter
 //  Author        :    Satyajeet Manohar Ghule
@@ -62,4 +62,5 @@ int main()
 //  Input   :   4   Output  :    Terminate code
 //
 ////////////////////////////////////////////////////////////////////////////
+
 
