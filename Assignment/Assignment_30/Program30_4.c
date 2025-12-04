@@ -1,0 +1,59 @@
+ ////////////////////////////////////////////////////////////////////////////
+//
+//  Request Header File 
+//
+////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :    DisplayDigit
+//  Description   :    accept string from user and display only digits
+//                     from that string.
+//  Input         :    String
+//  Output        :    void (print String)
+//  Author        :    Satyajeet Manohar Ghule
+//  Date          :    29/11/2025
+//
+////////////////////////////////////////////////////////////////////////////
+
+void DisplayDigit(char *str)
+{
+    while(*str != '\0')
+    {        
+        if(*str >= '0' && *str <= '9')
+        {
+            printf("%c",*str);
+        }
+        *str++;
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point Function for the Application
+//
+////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char Arr[20];
+    
+    printf("Enter a String :\n");
+    scanf("%[^'\n']s",Arr);
+
+    DisplayDigit(Arr);
+
+    //printf("Update String : %s",Arr);
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Test Cases Successfully Handeld by This Application
+//
+//  Input   :   MarvellouS123           Output  :   123
+//  Input   :   X1y2z3                  Output  :   123
+//
+////////////////////////////////////////////////////////////////////////////
