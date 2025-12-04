@@ -1,0 +1,59 @@
+ ////////////////////////////////////////////////////////////////////////////
+//
+//  Request Header File 
+//
+////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name :    DisplayASCII
+//  Description   :    Display ASCII table. Table contains symbol, Decimal,
+//                     Hexadecimal and Octal representation of every member 
+//                     from 0 to 255.                     
+//  Input         :    Character
+//  Output        :    void (print String)
+//  Author        :    Satyajeet Manohar Ghule
+//  Date          :    28/11/2025
+//
+////////////////////////////////////////////////////////////////////////////
+
+void DisplayASCII()
+{
+    printf
+    for(int iCnt = 0; iCnt <= 255; iCnt++)
+    {
+        if(iCnt >= 32 && iCnt <= 126)
+        { 
+            printf("%c\t", iCnt);
+        }
+        else
+        {
+            printf(".\t");
+        }
+        printf("%d\t\t%X\t\t%o\n", iCnt, iCnt, iCnt);
+    } 
+    printf("\n");
+}
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point Function for the Application
+//
+////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    DisplayASCII();
+
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////
+//
+//  Test Cases Successfully Handeld by This Application
+//
+//   
+//
+////////////////////////////////////////////////////////////////////////////
