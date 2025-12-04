@@ -21,7 +21,6 @@
 
 void DisplayASCII()
 {
-    printf
     for(int iCnt = 0; iCnt <= 255; iCnt++)
     {
         if(iCnt >= 32 && iCnt <= 126)
