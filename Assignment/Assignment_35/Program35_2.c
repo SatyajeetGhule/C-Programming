@@ -27,7 +27,7 @@ int Sum(int iNo)
 
     iDigit = iNo % 10;
 
-    return iDigit + Display(iNo / 10);
+    return iDigit + Sum(iNo / 10);
 
 }
 
@@ -54,4 +54,5 @@ int main()
 //
 //  Input   :   879    Output  :   24
 //
+
 ////////////////////////////////////////////////////////////////////////////
