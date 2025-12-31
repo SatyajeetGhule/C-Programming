@@ -130,7 +130,7 @@ int main()
 //
 //  Test Cases
 //
-//  Input  : |29|->|20|->|25|->|26|->|33|->|22|->NULL
+//  Input  : |29|->|20|->|25|->|26|->|33|->|20|->NULL
 //  
 //  Output :
 //           Enter a Number : 26
