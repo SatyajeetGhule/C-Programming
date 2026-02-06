@@ -1,0 +1,68 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Required header file
+//
+////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+typedef unsigned int UINT;
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : CountOne
+//  Description   : Write a program which accept one number user and count number
+//                  of ON (1) bits in it without using % and / operator.
+//  Input         : Integer
+//  Output        : Integer
+//  Author        : Satyajeet Manohar Ghule
+//  Date          : 05/02/2026
+//
+////////////////////////////////////////////////////////////////////////////////
+
+int CountOne(UINT NO)
+{
+    int iCount = 0;
+
+    while (NO != 0)
+    {
+        if (NO & 1)
+        {
+            iCount++;
+        }
+
+        NO = NO >> 1;
+    }
+
+    return iCount;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point function for the application
+//
+////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    UINT No = 0;
+    int Ret = 0;
+
+    printf("Enter the number : \n");
+    scanf("%u", &No);
+
+    Ret = CountOne(No);
+
+    printf("Number of ON bits is : %d\n", Ret);
+
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Testcases succesfully handle by the application
+//
+//  Input   : Enter the number : 11
+//  Ouptput : Number of ON bits is : 3
+//
+////////////////////////////////////////////////////////////////////////////////
